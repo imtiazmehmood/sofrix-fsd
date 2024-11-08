@@ -1,0 +1,22 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+section {
+  height: 100vh;
+  scroll-snap-align: center;
+}
+
+html,
+body,
+#__next {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
