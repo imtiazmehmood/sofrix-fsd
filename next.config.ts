@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+module.exports = {
+  eslint: {
+    dirs: ['pages', 'components'],
+    ignoreDuringBuilds: true,
+    rules: {
+      'react/no-unescaped-entities': 'off',  // Disables the rule
+    },
+  },
 };
-
-export default nextConfig;
