@@ -29,9 +29,7 @@ const Cards = () => {
 
         {/* Image Section with Padding */}
         <div className="relative w-full lg:w-[642px] pt-[56.25%] lg:pt-[45%] flex justify-center items-center p-5">
-          {/* Aspect ratio container for responsive scaling */}
           <div className="absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center">
-            {/* Reusable Image component */}
             {[
               { src: Amazonians, alt: "Amazonians", bottom: "30px" },
               { src: Googlers, alt: "Googlers", bottom: "25px" },
