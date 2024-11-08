@@ -69,7 +69,11 @@ const Home = () => {
               </div>
 
               {/* Button */}
-              <Button label="Log In" className="mt-6 w-full" />
+              <Button
+                label="Log In"
+                className="mt-6 w-full"
+                onClick={() => {}}
+              />
             </div>
           </div>
 
