@@ -22,7 +22,7 @@ export const Input: React.FC<InputProps> = ({
       value={value}
       onChange={onChange}
       type={type}
-      placeholder={placeholder}
+      placeholder={placeholder || "Enter text here..."}
       className={`w-full h-10 sm:h-12 md:h-14 lg:h-16 max-h-[63px] p-2 sm:p-3 md:p-4 rounded-lg border border-bluechill focus:outline-none focus:border-bluechill bg-[#f5faff] text-sm sm:text-base md:text-lg lg:text-xl ${className}`}
       {...rest}
     />

@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import Apple from "../app/assets/svg/Apple.svg";
 import Google from "../app/assets/svg/Google.svg";
+import Faces from "../app/assets/svg/Faces.svg";
 import { Input } from "@/components/Input";
 import Button from "@/components/Button";
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
     password: "",
   });
   return (
-    <>
+    <div>
       <div className="flex w-full justify-evenly">
         {/* Left Section FAANG */}
         <div className="flex flex-col items-center justify-center lg:max-w-[460px] text-center lg:text-left">
@@ -29,7 +30,7 @@ const Home = () => {
 
         {/* Right Section (Form) */}
         <div className="hidden lg:flex flex-col items-center w-[500px] lg:w-[591px]">
-          <div className="relative p-6  bg-cardBg bg-cover  rounded-[50px] ">
+          <div className="relative p-6  bg-CardBg bg-cover  rounded-[50px] ">
             <div className="bg-white p-6 rounded-[25px] h-full flex flex-col items-center">
               <p className="text-xl md:text-2xl font-semibold text-center mb-6">
                 Welcome Back
@@ -40,12 +41,14 @@ const Home = () => {
                 <Input
                   value={value.email}
                   type="text"
+                  placeholder="Enter your email address"
                   onChange={(e) => setlue({ ...value, email: e.target.value })}
                   className="w-full"
                 />
                 <Input
                   value={value.confirmEmail}
                   type="text"
+                  placeholder="Confirm email address"
                   onChange={(e) =>
                     setlue({ ...value, confirmEmail: e.target.value })
                   }
@@ -54,6 +57,7 @@ const Home = () => {
                 <Input
                   value={value.password}
                   type="password"
+                  placeholder="Enter your password"
                   onChange={(e) =>
                     setlue({ ...value, password: e.target.value })
                   }
@@ -92,7 +96,7 @@ const Home = () => {
       {/* SIGNUP TEXT IEW */}
       <div className=" lg:hidden flex flex-row text-center lg:max-w-[260px]">
         <p className="text-bluechill text-[17px] font-medium">
-          <span className="text-bluechilldark font-bold text-[16px]">
+          <span className="text-bluechilldark font-bold text-[16px] hover:cursor-pointer">
             Sign up today
           </span>
           <span>
@@ -104,8 +108,10 @@ const Home = () => {
         </p>
       </div>
       {/* Background Section */}
-      <div className="hidden lg:block w-full h-[200px] sm:h-[258px] bg-facesBg bg-cover mt-10"></div>
-    </>
+      <div className="hidden lg:block w-full h-auto mt-10 -mb-5">
+        <Image src={Faces} alt="faces" />
+      </div>
+    </div>
   );
 };
 

@@ -15,8 +15,13 @@ const config: Config = {
         bluechilldark:"#127398",
       },
       backgroundImage:{
-        cardBg:"url('/welcomebg.png')",
-        facesBg:"url('/faces.png')"
+        Faces:"url('/svg/Faces.svg')",
+        BlueBg:"url('/svg/BlueBg.svg')",
+        GreenBg:"url('/svg/GreenBg.svg')",
+        PurpleBg:"url('/svg/PurpleBg.svg')",
+        YellowBg:"url('/svg/YellowBg.svg')",
+        CardBg:"url('/svg/Background.svg')",
+        DarkBlueBg:"url('/svg/DarkBlueBg.svg')",
       },
       screens: {
         '2xl': '1536px',
